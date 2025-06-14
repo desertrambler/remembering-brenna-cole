@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna Cole – Military Biography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">In Memory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTabs">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTabs">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Guestbook</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Military Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Photo Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container text-center mt-5">
+        <div class="d-flex justify-content-center align-items-center mb-4 gap-3 flex-wrap">
+            <img src="{{ url_for('static', filename='photos/brenna_cole_msm.png') }}" alt="Brenna in uniform 1" class="img-fluid rounded shadow" style="max-width: 250px;">
+        </div>
+        <h1 class="display-5">Military Biography of <strong>Major Brenna Cole</strong></h1>
+        <p class="lead text-muted">United States Air Force</p>
+        <hr class="my-4">
+    </div>
+
+    <!-- Bio Content Section -->
+    <div class="container mt-4">
+        <p>Brenna Cole’s journey to military service began early, inspired by her father’s service in the Army Reserve and Iowa National Guard. A formative visit to the U.S. Air Force Academy during a family trip to Colorado sparked a determination in Brenna to earn an appointment there. She poured herself into academics, leadership, athletics, and service — eventually being accepted to the Academy. A torn ACL her senior year postponed that path, and she instead accepted an ROTC scholarship to Baylor University, where she graduated summa cum laude in Mathematics with a Spanish minor, and was named Baylor ROTC’s top cadet.</p>
+
+        <p>Commissioned in 2015, Brenna embarked on a decorated military career that demonstrated excellence in cyber operations, leadership, and service. Her first assignment was at Keesler AFB (MS) for Cyber Warfare Training, where she graduated as a Distinguished Graduate. She then served as a Flight Commander and Cyber Aggressor with the 57th Information Aggressor Squadron at Nellis AFB (NV).</p>
+
+        <p>From 2019 to 2021, she attended the Air Force Institute of Technology at Wright-Patterson AFB (OH), earning a Master of Science in Cyber Operations. Her thesis was awarded the Dean’s Award for best research in the department. She continued to rise, completing the elite FORGE Cyberspace Operator Course at Lackland AFB (TX) in 2023, again as a Distinguished Graduate.</p>
+
+        <p>At the time of her passing, Maj Brenna R. Cole was the Team Lead for the 402 Combat Mission Team, 375th Cyberspace Operations Squadron, Joint Base San Antonio–Lackland, TX. She commanded a team of 73 cyberspace and intelligence professionals conducting offensive cyberspace operations and intelligence integration. She also served with the Cyber National Mission Force and an Information Aggressor Squadron, with portions of her work classified due to the national security impact.</p>
+
+        <p>Fluent in Spanish, she was a member of the Language Enabled Airman Program. Brenna also served on the Department of the Air Force Scientific Advisory Board as the Executive Officer for Quantum Systems Studies in 2024–2025 — a prestigious selection reflecting her growing impact on the future of military science and technology.</p>
+
+        <h4 class="mt-5">Official Military Record</h4>
+
+        <h5 class="mt-4">Education</h5>
+        <ul>
+            <li>2015 – B.S., Mathematics / Minor in Spanish, Summa Cum Laude, Baylor University</li>
+            <li>2016 – Undergraduate Cyber Warfare Training, Distinguished Graduate, Keesler AFB, MS</li>
+            <li>2021 – M.S., Cyber Operations, Distinguished Graduate, AFIT, Wright-Patterson AFB, OH</li>
+            <li>2022 – Squadron Officer School, Maxwell AFB, AL</li>
+            <li>2023 – FORGE Cyberspace Operator Course, Distinguished Graduate, JBSA-Lackland, TX</li>
+        </ul>
+
+        <h5 class="mt-4">Assignments</h5>
+        <ul>
+            <li>2015–2016: Student, Cyber Warfare Training, 333rd Training Squadron, Keesler AFB, MS</li>
+            <li>2016–2019: Flight Commander, Cyber Aggressor, 57th Information Aggressor Squadron, Nellis AFB, NV</li>
+            <li>2019–2021: Student, AF Institute of Technology, Wright-Patterson AFB, OH</li>
+            <li>2021–2023: Student, FORGE Program, 39th Information Operations Squadron, JBSA-Lackland, TX</li>
+            <li>2023–2024: Team Lead, 402 Combat Mission Team, 375th Cyberspace Operations Squadron, JBSA-Lackland, TX</li>
+        </ul>
+
+        <h5 class="mt-4">Major Awards and Decorations</h5>
+        <ul>
+            <li>Meritorious Service Medal</li>
+            <li>Air Force Commendation Medal with one Oak Leaf Cluster</li>
+        </ul>
+
+        <h5 class="mt-4">Effective Dates of Promotion</h5>
+        <ul>
+            <li>Second Lieutenant – July 23, 2015</li>
+            <li>First Lieutenant – July 23, 2017</li>
+            <li>Captain – July 23, 2019</li>
+            <li>Major – September 1, 2024</li>
+        </ul>
+
+        <p class="mt-5">Major Brenna Cole’s legacy in the U.S. Air Force was marked by excellence, humility, and purpose. Her work directly impacted the defense of our nation, and she remains a model of service, intelligence, and faith for all who knew her.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted py-4 mt-5 border-top">
+        © {{ year }} In Memory of Brenna Cole. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

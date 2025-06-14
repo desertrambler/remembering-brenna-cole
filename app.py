@@ -7,5 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', year=datetime.now().year)
 
+@app.route('/military_bio')
+def military_bio():
+    return render_template('military_bio.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
