@@ -11,5 +11,9 @@ def index():
 def military_bio():
     return render_template('military_bio.html')
 
+@app.route('/tribute_wall')
+def tribute_wall():
+    return render_template('tribute_wall.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
