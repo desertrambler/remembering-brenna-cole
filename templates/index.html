@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memory of Brenna Cole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">In Memory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTabs">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTabs">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Guestbook</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Military Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Photo Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center mt-5">
+        <img src="{{ url_for('static', filename='photos/brenna_cole_headshot.png') }}" class="rounded-circle border border-primary shadow" alt="Brenna Pickrel Photo">
+        <h1 class="display-5 mt-4">In Loving Memory of <br><strong>Brenna Cole</strong></h1>
+        <p class="lead text-muted">United States Air Force • Major</p>
+        <hr class="my-4">
+    </div>
+
+    <!-- Obituary Section -->
+    <div class="container mt-4">
+        <p>Brenna Renee Cole-Pickrel was born February 3rd, 1993, and died October 2nd, 2024, at the age of 31. On a bright Sunday afternoon, Brenna was jogging with her dog Daisy when she was tragically struck by oncoming traffic while using a crosswalk. She is survived by her husband Kane Pickrel, parents Tom and Linda Cole; brother Adam Cole, his wife Myriah, and nephew Winston; and sister Lindsey Cole.</p>
+
+        <p>Brenna's life was a testament to excellence and faith. Born in Fort Smith, Arkansas, she grew up in Central Iowa, surrounded by family and friends who valued serving others. Annual vacations at Lake Okoboji became a cherished family tradition. Brenna's intellectual gifts shined early, as she graduated valedictorian from Southeast Polk High School before continuing her academic journey at Baylor University. There, she graduated summa cum laude with a degree in Mathematics, a minor in Spanish, and was awarded Baylor ROTC’s highest honors.</p>
+
+        <p>Brenna never rested. When an opportunity to experience something new or enrich herself was available, she took advantage of it. For example, when there was a gap between graduation and active duty, she spent a month walking the Camino De Santiago across Spain. From there she embarked on her military career, beginning her first assignment at Keesler AFB (MS) and eventually Nellis AFB (NV), where she learned the foundations of leadership, military strategy, and serving her fellow wingmen.</p>
+
+        <p>Pursuing her career goals, Brenna studied at the Air Force Institute of Technology, earning a Master's in Cyber Operations with distinguished honors and conducted research in quantum computing. At Joint Base San Antonio-Lackland (TX), she began a highly selective program that resulted in her leading a strategic operations team with a vital role in national security.</p>
+
+        <p>Her professional achievements were matched only by her vibrant spirit and boundless compassion. Brenna poured into others in every aspect of life — whether volunteering, engaging in sports, leading Bible studies, or mentoring fellow Airmen. She radiated joy and kindness to all she encountered, from close friends and family to perfect strangers.</p>
+
+        <p>Above all, Brenna will be remembered for her unwavering faith and profound commitment to Jesus Christ, which permeated every facet of her existence. She set and maintained the highest standards in her career and personal life, always guided by her deep spiritual convictions. Her legacy is one of intellectual brilliance, selfless service, and an unshakeable faith that inspired all who knew her.</p>
+
+        <p>The family is working to establish a long-term plan for memorials to Brenna. More information about this effort will be communicated soon. Thank you for your support.</p>
+    </div>
+
+    <footer class="text-center text-muted py-4 mt-5 border-top">
+        © {{ year }} In Memory of Brenna Cole. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
