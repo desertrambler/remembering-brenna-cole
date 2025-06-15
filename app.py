@@ -31,7 +31,7 @@ def military_bio():
 def tribute_wall():
     if request.method == 'POST':
         name = request.form['name']
-        date = request.form.get('date')
+        date = datetime.now()
         message = request.form['message']
         author = request.form['author']
         new_tribute = Tribute(name=name, date=date, message=message, author=author)
