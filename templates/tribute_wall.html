@@ -36,6 +36,34 @@
         <hr class="my-4">
     </div>
 
+    <div class="container mb-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Share a Tribute</h5>
+                <form method="POST" action="{{ url_for('tribute_wall') }}">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Honoree Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date (optional)</label>
+                        <input type="text" class="form-control" id="date" name="date" placeholder="e.g. June 5, 2022">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="author" name="author" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post Tribute</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Tribute Cards Grid -->
     <div class="container">
         <div class="row g-4">
